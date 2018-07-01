@@ -1,5 +1,10 @@
 package com.mac.bry.mvc.model;
 
+import java.util.LinkedHashMap;
+
+import org.springframework.stereotype.Component;
+
+
 public class Adress {
 
 	private String country;
@@ -8,8 +13,14 @@ public class Adress {
 	private String localNumber;
 	private String zipcode;
 	
+	private LinkedHashMap<String, String>countryOptions;
+	
 	public Adress() {
 		super();
+		countryOptions = new LinkedHashMap<>();
+		countryOptions.put("PL", "Polska");
+		countryOptions.put("GB", "England");
+		countryOptions.put("US", "United States");
 	}
 
 	public Adress(String country, String street, String houseNumber, String localNumber, String zipcode) {
@@ -59,6 +70,14 @@ public class Adress {
 
 	public void setZipcode(String zipcode) {
 		this.zipcode = zipcode;
+	}
+
+	public LinkedHashMap<String, String> getCountryOptions() {
+		return countryOptions;
+	}
+
+	public void setCountryOptions(LinkedHashMap<String, String> countryOptions) {
+		this.countryOptions = countryOptions;
 	}
 	
 	

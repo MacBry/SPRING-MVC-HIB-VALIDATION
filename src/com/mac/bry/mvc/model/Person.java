@@ -1,9 +1,11 @@
 package com.mac.bry.mvc.model;
 
+import java.util.LinkedHashMap;
+
 public class Person {
 
 	private String firstName;
-	private String secondName;
+	private String lastName;
 	private String pesel;
 	private int age;
 	private Sex sex;
@@ -13,10 +15,10 @@ public class Person {
 		super();
 	}
 
-	public Person(String firstName, String secondName, String pesel, int age, Sex sex, Adress adress) {
+	public Person(String firstName, String lastName, String pesel, int age, Sex sex, Adress adress) {
 		super();
 		this.firstName = firstName;
-		this.secondName = secondName;
+		this.lastName = lastName;
 		this.pesel = pesel;
 		this.age = age;
 		this.sex = sex;
@@ -31,12 +33,12 @@ public class Person {
 		this.firstName = firstName;
 	}
 
-	public String getSecondName() {
-		return secondName;
+	public String getLastName() {
+		return lastName;
 	}
 
-	public void setSecondName(String secondName) {
-		this.secondName = secondName;
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 
 	public String getPesel() {
