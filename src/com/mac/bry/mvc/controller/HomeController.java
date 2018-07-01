@@ -20,4 +20,9 @@ public class HomeController {
 	public String showForm(@ModelAttribute("person") Person person, @ModelAttribute("adress") Adress adress) {
 		return "form-page";
 	}
+
+	@RequestMapping("processForm")
+	public String proscessForm() {
+		return "Confirm-page";
+	}
 }
