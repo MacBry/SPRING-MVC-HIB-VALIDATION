@@ -36,7 +36,7 @@
 
 <h1>PERSON FORM</h1>
 <hr>
-<form:form action="processForm" modelAttribute="person" >
+<form:form action="processForm" modelAttribute="person"  modelAtribute="adress">
 <div class="container">
 
 	<div class="left">
@@ -87,6 +87,7 @@
 	
 	</div>
 </div>
+<input type="submit" value=" Enter Data">
 </form:form>
 </body>
 </html>
